@@ -51,7 +51,7 @@ void function(){
 
     socketOptions = {
         'sync disconnect on unload': false
-      , 'transports': ['websocket', 'flashsocket', 'htmlfile', 'xhr-multipart', 'xhr-polling', 'jsonp-polling']
+      , 'transports': ['xhr-polling', 'jsonp-polling']
     }
 
   // natural sorting
