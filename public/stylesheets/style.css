@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(top, #fff, #bbb);
+  background-image: -moz-linear-gradient(top, #fff, #bbb);
+  background-image: -ms-linear-gradient(top, #fff, #bbb);
+  background-image: -o-linear-gradient(top, #fff, #bbb);
+  background-image: linear-gradient(top, #fff, #bbb);
+}
+input {
+  line-height: 50px;
+  border: 1px solid #444;
+  color: #444;
+  text-shadow: 2px 2px 2px #fff;
+  border-radius: 5px 5px 5px 5px;
+  height: 50px;
+  text-indent: 1em;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ccc;
+  background-image: -webkit-linear-gradient(top, #ccc, #fff);
+  background-image: -moz-linear-gradient(top, #ccc, #fff);
+  background-image: -ms-linear-gradient(top, #ccc, #fff);
+  background-image: -o-linear-gradient(top, #ccc, #fff);
+  background-image: linear-gradient(top, #ccc, #fff);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+input:focus {
+  box-shadow: 0px 0px 15px #000;
+}
+#header-wrapper {
+  background-color: #709;
+  background-image: -webkit-linear-gradient(top, #709, #506);
+  background-image: -moz-linear-gradient(top, #709, #506);
+  background-image: -ms-linear-gradient(top, #709, #506);
+  background-image: -o-linear-gradient(top, #709, #506);
+  background-image: linear-gradient(top, #709, #506);
+  box-shadow: 0px 0px 10px #000;
+}
+#header-wrapper header {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+#header-wrapper header h1 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
+  font-size: 56px;
+  font-family: Cambria, Georgia, Serif;
+  cursor: default;
+  display: inline-block;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+#header-wrapper header h1:hover {
+  color: #ff6;
+  text-shadow: 10px 10px 30px #000;
+  -webkit-transform: rotate(-7.5deg);
+/* Saf3.1+, Chrome */
+  -moz-transform: rotate(-7.5deg);
+/* FF3.5+ */
+  -ms-transform: rotate(-7.5deg);
+/* IE9 */
+  -o-transform: rotate(-7.5deg);
+/* Opera 10.5 */
+  transform: rotate(-7.5deg);
+}
+#header-wrapper header nav {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#header-wrapper header nav ul {
+  margin: 0;
+  padding: 0;
+}
+#header-wrapper header nav ul li {
+  list-style: none;
+}
+#header-wrapper header nav ul li a,
+#header-wrapper header nav ul li a:link {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  color: #fff;
+  display: inline-block;
+  padding: 3px 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#header-wrapper header nav ul li a:hover {
+  color: #de0;
+  text-shadow: 1px 1px 3px #000;
+}
+#header-wrapper #header-bottom {
+  height: 20px;
+  border-bottom: 1px solid #409;
+  background-color: #709;
+  background-image: -webkit-linear-gradient(top, #709, #405);
+  background-image: -moz-linear-gradient(top, #709, #405);
+  background-image: -ms-linear-gradient(top, #709, #405);
+  background-image: -o-linear-gradient(top, #709, #405);
+  background-image: linear-gradient(top, #709, #405);
+}
+#content {
+  width: 960px;
+  margin: 15px auto;
+  text-shadow: 1px 1px 1px #aaa;
+  min-height: 300px;
+  position: relative;
+}
+#content #name-entry {
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(top, #fff, #bbb);
+  background-image: -moz-linear-gradient(top, #fff, #bbb);
+  background-image: -ms-linear-gradient(top, #fff, #bbb);
+  background-image: -o-linear-gradient(top, #fff, #bbb);
+  background-image: linear-gradient(top, #fff, #bbb);
+  display: none;
+  position: absolute;
+  text-align: center;
+  border: 1px solid #000;
+  box-shadow: 0px 10px 30px #000;
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px;
+  width: 300px;
+  top: -50px;
+  left: 200px;
+  z-index: 100;
+}
+#content #name-entry #name-message {
+  color: #888;
+}
+#content #name-entry input {
+  text-align: center;
+  text-indent: 0;
+}
+#nojs-warning {
+  color: #800;
+  text-align: center;
+}
+.js #nojs-warning {
+  display: none;
+}
+.no-js #nojs-warning {
+  display: block;
+}
+.js #game-area {
+  display: block;
+}
+.no-js #game-area {
+  display: none;
+}
+#game {
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -ms-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+}
+#game.observer {
+  opacity: 0.25;
+  filter: alpha(Opacity=25);
+}
+#game-area #game-head {
+  overflow: hidden;
+}
+#game-area #game-head #welcome {
+  float: left;
+}
+#game-area #game-head #welcome,
+#game-area #game-head #giver-info {
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+#game-area #game-head #welcome dl,
+#game-area #game-head #giver-info dl {
+  margin: 0;
+  display: table-row;
+}
+#game-area #game-head #welcome dl dt,
+#game-area #game-head #giver-info dl dt {
+  display: table-cell;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+  padding-right: 40px;
+}
+#game-area #game-head #welcome dl dd,
+#game-area #game-head #giver-info dl dd {
+  display: table-cell;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+}
+#game-area #game-head #welcome dl#observer-total,
+#game-area #game-head #giver-info dl#observer-total {
+  display: none;
+}
+#game-area #game-head #giver-info {
+  float: right;
+  width: 225px;
+}
+#game-area #game-head #message-entry {
+  margin: 0px 245px 0px 245px;
+}
+#game-area #game-head #message-entry #message {
+  width: 95%;
+}
+#game-area #game-body {
+  overflow: hidden;
+  zoom: 1;
+  margin: 20px 0;
+}
+#game-area #game-body #users,
+#game-area #game-body #messages {
+  box-shadow: inset 0px 0px 5px #444;
+  border-radius: 10px;
+  border: 2px solid #444;
+  margin: 0;
+  padding: 15px;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(top, #fff, #ddd);
+  background-image: -moz-linear-gradient(top, #fff, #ddd);
+  background-image: -ms-linear-gradient(top, #fff, #ddd);
+  background-image: -o-linear-gradient(top, #fff, #ddd);
+  background-image: linear-gradient(top, #fff, #ddd);
+}
+#game-area #game-body #users {
+  width: 200px;
+  float: left;
+  display: table;
+  font-weight: bold;
+  font-size: 18px;
+}
+#game-area #game-body #users dl {
+  display: table-row;
+}
+#game-area #game-body #users dl dt {
+  display: table-cell;
+  *display: inline;
+  zoom: 1;
+  padding-right: 10px;
+}
+#game-area #game-body #users dl dd {
+  display: table-cell;
+  *display: inline;
+  zoom: 1;
+  text-align: right;
+}
+#game-area #game-body #card {
+  display: none;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(top, #fff, #eee);
+  background-image: -moz-linear-gradient(top, #fff, #eee);
+  background-image: -ms-linear-gradient(top, #fff, #eee);
+  background-image: -o-linear-gradient(top, #fff, #eee);
+  background-image: linear-gradient(top, #fff, #eee);
+  float: right;
+  margin: 15px;
+  width: 200px;
+  border: 1px solid #444;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0px 10px 10px #000;
+  margin: 15px;
+  padding: 10px;
+}
+#game-area #game-body #card a#skip-button {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #00a;
+  background-image: -webkit-linear-gradient(top, #00a, #004);
+  background-image: -moz-linear-gradient(top, #00a, #004);
+  background-image: -ms-linear-gradient(top, #00a, #004);
+  background-image: -o-linear-gradient(top, #00a, #004);
+  background-image: linear-gradient(top, #00a, #004);
+}
+#game-area #game-body #card dl {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#game-area #game-body #card dl dt {
+  color: #008;
+  font-size: 18px;
+  padding: 0 15px;
+  text-align: center;
+}
+#game-area #game-body #card dl dd {
+  color: #800;
+  margin: 0;
+  padding: 0 5px;
+}
+#game-area #game-body #card dl dd ul {
+  margin: 0;
+  padding: 0;
+}
+#game-area #game-body #card dl dd ul li {
+  list-style: none;
+  text-align: center;
+}
+#game-area #game-body #messages {
+  min-height: 200px;
+  margin: 0;
+  margin-left: 245px;
+  padding: 15px 15px 15px 30px;
+  text-shadow: 2px 2px 2px #fff;
+  text-indent: -15px;
+}
+#game-area #game-body #messages li {
+  list-style: none;
+  color: #444;
+  font-weight: bold;
+  font-size: 16px;
+}
+#game-area #game-body #messages .giver {
+  color: #709;
+}
+#game-area #game-body #messages .warning {
+  color: #800;
+}
+#game-area #game-body #messages .info {
+  color: #080;
+  font-size: 15px;
+}
+#game-area #game-body #messages .important {
+  color: #008;
+}
+footer {
+  background-color: #709;
+  background-image: -webkit-linear-gradient(top, #709, #405);
+  background-image: -moz-linear-gradient(top, #709, #405);
+  background-image: -ms-linear-gradient(top, #709, #405);
+  background-image: -o-linear-gradient(top, #709, #405);
+  background-image: linear-gradient(top, #709, #405);
+  text-align: center;
+  color: #ff6;
+  font-size: 12px;
+  text-shadow: 1px 1px #444;
+  padding: 5px 0;
+  box-shadow: 0px 0px 10px #000;
+}

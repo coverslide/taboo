@@ -1,0 +1,284 @@
+gradient(location first args...)
+  background-color first
+  background-image -webkit-linear-gradient(location, first, args) // Chrome 10+, Saf5.1+ */
+  background-image -moz-linear-gradient(location, first, args) // FF3.6 */
+  background-image -ms-linear-gradient(location, first, args) // IE10 */
+  background-image -o-linear-gradient(location, first, args) // Opera 11.10+ */
+  background-image linear-gradient(location, first, args)
+
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -ms-transition arguments
+  -o-transition arguments
+  transition arguments
+
+transform()
+  -webkit-transform arguments /* Saf3.1+, Chrome */
+  -moz-transform arguments /* FF3.5+ */
+  -ms-transform arguments /* IE9 */
+  -o-transform arguments /* Opera 10.5 */
+  transform arguments
+
+opacity(value)
+  opacity value
+  filter unquote('alpha(Opacity=' + round(value * 100) + ')')
+
+body
+  margin 0
+  padding 0
+  font-family Arial
+  gradient(top, #fff, #bbb)
+
+input
+  line-height 50px
+  border 1px solid #444
+  color #444
+  text-shadow 2px 2px 2px #fff
+  border-radius 5px 5px 5px 5px
+  height 50px
+  text-indent 1em
+  vertical-align middle
+  padding 0
+  margin 0
+  font-size 18px
+  font-weight bold
+  gradient(top, #ccc, #fff)
+  transition(all 1s)
+
+input:focus
+  box-shadow 0px 0px 15px #000
+
+#header-wrapper
+  gradient(top, #709, #506)
+  header
+    width 960px
+    margin 0 auto
+    padding 20px 0
+    position relative
+    h1
+      margin 0
+      color #fff
+      text-shadow 2px 2px 3px #000 
+      font-size 56px
+      font-family Cambria, Georgia, Serif
+      cursor default
+      display inline-block
+      transition all 1s
+    h1:hover
+      color #ff6
+      text-shadow 10px 10px 30px #000 
+      transform(rotate(-7.5deg))
+    nav
+      position absolute
+      top 15px
+      right 15px
+      ul
+        margin 0
+        padding 0
+        li
+          list-style none
+          a, a:link
+            transition(all 1s)
+            color white
+            display inline-block
+            padding 3px 5px
+            font-weight bold
+            text-decoration none
+          a:hover
+            color #de0
+            text-shadow 1px 1px 3px #000
+
+  #header-bottom
+    height 20px
+    //background-image -webkit-linear-gradient(top, #709, #ddd)
+    //border-top 1px solid #888
+    border-bottom 1px solid #409
+    //background #405
+    gradient(top, #709, #405)
+  box-shadow 0px 0px 10px #000
+
+#content
+  width 960px
+  margin 15px auto
+  text-shadow 1px 1px 1px #aaa
+  min-height 300px
+  position relative
+
+  #name-entry
+    gradient(top, #fff, #bbb)
+    display none
+    position absolute
+    text-align center
+    border 1px solid black
+    box-shadow 0px 10px 30px #000
+    border-radius 5px 5px 5px 5px
+    padding 15px
+    width 300px
+    top -50px
+    left 200px
+    z-index 100
+    #name-message
+      color #888  
+
+    input
+      text-align center
+      text-indent 0
+
+#nojs-warning
+  color #800
+  text-align center
+
+.js #nojs-warning
+  display none
+.no-js #nojs-warning
+  display block
+
+.js #game-area
+  display block
+.no-js #game-area
+  display none
+
+#game
+  transition(all 3s)
+#game.observer
+  opacity(.25)
+
+#game-area
+  #game-head
+    overflow hidden
+    #welcome
+      float left
+    #welcome, #giver-info
+      width 200px
+      font-size 18px
+      font-weight bold
+      line-height 1.5em
+      dl
+        margin 0
+        display table-row
+        dt
+          display table-cell
+          *display inline
+          zoom 1
+          margin 0
+          padding-right 40px
+        dd
+          display table-cell
+          *display inline
+          zoom 1
+          margin 0
+      dl#observer-total
+        display none
+
+    #giver-info
+      float right
+      width 225px
+    #message-entry
+      margin: 0px 245px 0px 245px
+      #message
+        width 95%
+
+  #game-body
+    overflow hidden
+    zoom 1
+    margin 20px 0
+    #users, #messages
+      box-shadow inset 0px 0px 5px #444
+      border-radius 10px
+      border 2px solid #444
+      margin 0
+      padding 15px
+      gradient(top, #fff, #ddd)
+
+    #users
+      width 200px
+      float left
+      display table
+      font-weight bold
+      font-size 18px
+      dl
+        display table-row
+        dt
+          display table-cell
+          *display inline
+          zoom 1
+          padding-right 10px
+        dd
+          display table-cell
+          *display inline
+          zoom 1
+          text-align right
+    #card
+      display none
+      gradient(top, #fff, #eee)
+      float right
+      margin 15px
+      width 200px
+      border 1px solid #444
+      border-radius 8px 8px 8px 8px
+      box-shadow 0px 10px 10px #000
+      margin 15px
+      padding 10px
+      a#skip-button
+        cursor pointer
+        display block
+        text-align center
+        font-size 30px
+        line-height 30px
+        padding 5px 10px
+        color white
+        font-weight bold
+        gradient(top, #00a, #004)
+      dl
+        margin 0
+        padding 0
+        text-align center
+        font-weight bold
+        text-transform uppercase
+        dt
+          color #008
+          font-size 18px
+          padding 0 15px
+          text-align center
+        dd
+          color #800
+          margin 0
+          padding 0 5px
+          ul
+            margin 0
+            padding 0
+            li
+              list-style none
+              text-align center
+
+    #messages
+      min-height 200px
+      margin 0
+      margin-left 245px
+      padding 15px 15px 15px 30px
+      text-shadow 2px 2px 2px #fff
+      text-indent -15px
+      li
+        list-style none 
+        color #444
+        font-weight bold
+        font-size 16px
+      .giver
+        color #709
+      .warning
+        color #800
+      .info
+        color #080
+        font-size 15px
+      .important
+        color #008
+
+footer
+  gradient(top, #709, #405)
+  text-align center
+  color #ff6
+  font-size 12px
+  text-shadow 1px 1px #444
+  padding 5px 0
+  box-shadow 0px 0px 10px #000

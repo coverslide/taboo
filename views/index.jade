@@ -1,0 +1,44 @@
+#page--index
+  #nojs-warning
+    h2 Taboo requires JavaScript to run
+    p Either your browser is not supported or you must deactivate your JavaScript blocker.
+  #game-area
+    #name-entry
+      h2 Please enter your name
+      p#name-message
+      input#username(maxlength=20)
+    #game.observer
+      #game-head
+        #welcome
+          dl#your-name
+            dt Name:
+            dd none
+          dl#user-score
+            dt Score:
+            dd 0
+          dl#user-total
+            dt Users:
+            dd 0
+          dl#observer-total
+            dt Observers:
+            dd 0
+        #giver-info
+          dl#giver-name
+            dt Giver:
+            dd none
+          dl#giver-score
+            dt Score:
+            dd 0
+          dl#giver-timeout
+            dt Time left:
+            dd 0
+        #message-entry
+          input#message(disabled)
+      #game-body
+        //- so i can always use insertBefore
+        #users
+          dl(style="display: none")
+        #card
+          a#skip-button Skip
+        ul#messages
+          li(style="display: none")
