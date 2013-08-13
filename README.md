@@ -3,7 +3,7 @@ Taboo
 
 An old demo I did for an interview. 
 
-Basic rules of the traditional board game apply.
+Basic rules of the traditional board game apply. Click the "Rules" link for details.
 
 Demo
 ====
@@ -15,7 +15,7 @@ http://enigmatic-savannah-6160.herokuapp.com/
 Quick Start
 ===========
 
-Remember to `npm install` dependencies. THen run:
+Remember to `npm install` dependencies. Then run:
 
 ```
 node server.js
