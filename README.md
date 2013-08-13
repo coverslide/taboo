@@ -24,10 +24,9 @@ node server.js
 TODO
 ====
 
-Migrate to newer library versions
-
-* Express 2->3
-* Socket.IO 0.7->1.0
-
-Clean up code, fix some bugs. Most of it was rushed.
-Moar Cards!
+* Migrate to newer library versions
+    * Express 2->3
+    * Socket.IO 0.7->1.0
+* Clean up code, fix some bugs. Most of it was rushed.
+* Moar Cards!
+* Persist a score board after users quit
