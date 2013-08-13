@@ -5,6 +5,13 @@ An old demo I did for an interview.
 
 Basic rules of the traditional board game apply.
 
+Demo
+====
+
+Hosted on Heroku (requires at least 2 players):
+
+http://enigmatic-savannah-6160.herokuapp.com/
+
 Quick Start
 ===========
 
