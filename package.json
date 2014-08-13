@@ -1,18 +1,16 @@
 {
-    "author": "Richard Hoffman"
-  , "name": "taboo"
-  , "description": "Taboo Game demonstration"
-  , "version": "0.0.8"
-  , "repository": {
+  "author": "Richard Hoffman",
+  "name": "taboo",
+  "description": "Taboo Game demonstration",
+  "version": "0.1.0",
+  "repository": {
     "url": ""
-  }
-  , "main": "./server.js"
-  , "dependencies": {
-      "socket.io": "0.8.x"
-    , "express": "2.x"
-    , "jade": "0.33.x"
-    , "stylus": "0.34.x"
-  }
-  , "devDependencies": {
-  }
+  },
+  "main": "./app.js",
+  "dependencies": {
+    "express": "^4.8.3",
+    "natural": "^0.1.28",
+    "socket.io": "^1.0.6"
+  },
+  "devDependencies": {}
 }

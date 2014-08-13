@@ -1,5 +1,5 @@
-var app = module.exports = require('./lib/server-main');
+'use strict';
 
-if(require.main == module) {
-    app.listen(process.env.PORT || 8081, process.env.HOST);
-}
+var Taboo = require('./Taboo');
+var taboo = new Taboo();
+taboo.listen();

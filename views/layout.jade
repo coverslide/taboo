@@ -14,8 +14,8 @@ html.no-js
           li: a(href="/") Home
           li: a(href="/rules",target="_blank",onclick="javascript:void(rulePopup)") Rules
       #header-bottom
-    #content!=body
+    #content
+        block content
     footer #{new Date().getFullYear()} Richard Hoffman
-    script(type="text/javascript", src="/socket.io/socket.io.js")
     script(type="text/javascript", src="/scripts/vendor/jquery.js")
-    script(type="text/javascript", src="/scripts/script.js")
+    block bottom
