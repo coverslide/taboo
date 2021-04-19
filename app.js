@@ -1,5 +1,4 @@
-'use strict';
+import Taboo from './Taboo.js'
 
-var Taboo = require('./Taboo');
-var taboo = new Taboo();
-taboo.listen();
+const taboo = new Taboo()
+taboo.listen()

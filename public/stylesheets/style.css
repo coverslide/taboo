@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+  background: #bbb;
+}
 body {
   margin: 0;
   padding: 0;
@@ -69,14 +73,10 @@ input:focus {
 #header-wrapper header h1:hover {
   color: #ff6;
   text-shadow: 10px 10px 30px #000;
-  -webkit-transform: rotate(-7.5deg);
-/* Saf3.1+, Chrome */
-  -moz-transform: rotate(-7.5deg);
-/* FF3.5+ */
-  -ms-transform: rotate(-7.5deg);
-/* IE9 */
-  -o-transform: rotate(-7.5deg);
-/* Opera 10.5 */
+  -webkit-transform: rotate(-7.5deg) /* Saf3.1+, Chrome */;
+  -moz-transform: rotate(-7.5deg) /* FF3.5+ */;
+  -ms-transform: rotate(-7.5deg) /* IE9 */;
+  -o-transform: rotate(-7.5deg) /* Opera 10.5 */;
   transform: rotate(-7.5deg);
 }
 #header-wrapper header nav {
@@ -353,6 +353,7 @@ input:focus {
   color: #008;
 }
 footer {
+  position: fixed;
   background-color: #709;
   background-image: -webkit-linear-gradient(top, #709, #405);
   background-image: -moz-linear-gradient(top, #709, #405);
@@ -365,4 +366,6 @@ footer {
   text-shadow: 1px 1px #444;
   padding: 5px 0;
   box-shadow: 0px 0px 10px #000;
+  bottom: 0;
+  width: 100%;
 }

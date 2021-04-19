@@ -1,30 +1,36 @@
-'use strict';
+import express from 'express'
+import path from 'path'
 
-var express = require('express');
+const importPath = import.meta.url
+const importUrl = new URL(importPath)
 
-module.exports = WebServer.init = WebServer;
+const __dirname = path.dirname(importUrl.pathname)
 
-function WebServer(){
-    var app = this.express = express();
+class WebServer {
+  constructor () {
+    const app = (this.express = express())
 
-    app.set('view engine', 'jade')
+    app.set('view engine', 'pug')
     app.set('views', __dirname + '/views')
 
-    app.use(express.static(__dirname + '/public'));
+    app.use(express.static(__dirname + '/public'))
 
-    app.get('/', function(req, res, next){
-        res.render('index');
-    });
+    app.get('/', function (req, res, next) {
+      res.render('index')
+    })
 
-    app.get('/rules', function(req, res, next){
-        res.render('rules');
-    });
+    app.get('/rules', function (req, res, next) {
+      res.render('rules')
+    })
 
-    app.get('/partial/rules', function(req, res, next){
-        res.partial('rules');
-    });
+    app.get('/partial/rules', function (req, res, next) {
+      res.partial('rules')
+    })
+  }
+
+  bindToServer (httpServer) {
+    httpServer.on('request', this.express)
+  }
 }
 
-WebServer.prototype.bindToServer = function (httpServer) {
-    httpServer.on('request', this.express);
-}
+export default WebServer

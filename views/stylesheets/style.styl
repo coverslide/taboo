@@ -24,6 +24,10 @@ opacity(value)
   opacity value
   filter unquote('alpha(Opacity=' + round(value * 100) + ')')
 
+html
+  height 100%
+  background #bbb
+
 body
   margin 0
   padding 0
@@ -275,6 +279,7 @@ input:focus
         color #008
 
 footer
+  position fixed
   gradient(top, #709, #405)
   text-align center
   color #ff6
@@ -282,3 +287,5 @@ footer
   text-shadow 1px 1px #444
   padding 5px 0
   box-shadow 0px 0px 10px #000
+  bottom 0
+  width 100%

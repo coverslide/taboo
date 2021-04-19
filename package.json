@@ -8,9 +8,18 @@
   },
   "main": "./app.js",
   "dependencies": {
-    "express": "^4.8.3",
-    "natural": "^0.1.28",
-    "socket.io": "^1.0.6"
+    "express": "^4.17.1",
+    "natural": "^5.0.3",
+    "pug": "^3.0.2",
+    "socket.io": "^4.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "stylus": "^0.54.8"
+  },
+  "type": "module"
 }

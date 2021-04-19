@@ -1,11 +1,12 @@
-!!! 5
+doctype html
 html.no-js
   head
     meta(name="env",value=env)
     link(rel="icon",type="image/x-icon",href="/favicon.ico")
     link(rel="stylesheet",type="text/css",href="/stylesheets/normalize.css")
     link(rel="stylesheet",type="text/css",href="/stylesheets/style.css")
-    script(type="text/javascript", src="/scripts/vendor/modernizr.js")
+    script.
+      document.documentElement.className = "js";
   body
     #header-wrapper
       header#header
@@ -17,5 +18,5 @@ html.no-js
     #content
         block content
     footer #{new Date().getFullYear()} Richard Hoffman
-    script(type="text/javascript", src="/scripts/vendor/jquery.js")
+    script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
     block bottom
