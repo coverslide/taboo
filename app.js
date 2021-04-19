@@ -1,4 +1,4 @@
-import Taboo from './Taboo.js'
+import Taboo from './Taboo.js';
 
-const taboo = new Taboo()
-taboo.listen()
+const taboo = new Taboo();
+taboo.listen();

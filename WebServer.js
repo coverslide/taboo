@@ -1,36 +1,36 @@
-import express from 'express'
-import path from 'path'
+import express from 'express';
+import path from 'path';
 
-const importPath = import.meta.url
-const importUrl = new URL(importPath)
+const importPath = import.meta.url;
+const importUrl = new URL(importPath);
 
-const __dirname = path.dirname(importUrl.pathname)
+const __dirname = path.dirname(importUrl.pathname);
 
 class WebServer {
   constructor () {
-    const app = (this.express = express())
+    const app = (this.express = express());
 
-    app.set('view engine', 'pug')
-    app.set('views', __dirname + '/views')
+    app.set('view engine', 'pug');
+    app.set('views', __dirname + '/views');
 
-    app.use(express.static(__dirname + '/public'))
+    app.use(express.static(__dirname + '/public'));
 
     app.get('/', function (req, res, next) {
-      res.render('index')
-    })
+      res.render('index');
+    });
 
     app.get('/rules', function (req, res, next) {
-      res.render('rules')
-    })
+      res.render('rules');
+    });
 
     app.get('/partial/rules', function (req, res, next) {
-      res.partial('rules')
-    })
+      res.partial('rules');
+    });
   }
 
   bindToServer (httpServer) {
-    httpServer.on('request', this.express)
+    httpServer.on('request', this.express);
   }
 }
 
-export default WebServer
+export default WebServer;

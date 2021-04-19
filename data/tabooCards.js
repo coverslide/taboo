@@ -282,4 +282,4 @@ export default [
     word: 'brown-nose',
     taboo: ['flatter', 'bootlick', 'boss', 'suck-up', 'yes-man']
   }
-]
+];
