@@ -8,7 +8,7 @@
   },
   "main": "./app.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "natural": "^5.0.3",
     "pug": "^3.0.2",
     "socket.io": "^4.0.1"
